@@ -349,7 +349,7 @@
       <div id="u274" class="ax_default label">
         <div id="u274_div" class=""></div>
         <div id="u274_text" class="text ">
-          <p><span>（n+w）月，sku a的invoice=70元</span></p>
+          <p><span>已给商家打款70元</span></p>
         </div>
       </div>
 
@@ -357,7 +357,7 @@
       <div id="u275" class="ax_default label">
         <div id="u275_div" class=""></div>
         <div id="u275_text" class="text ">
-          <p><span>已给商家打款70元</span></p>
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">在（n+w+m）月，综合</span><span style="font-family:'ArialMT', 'Arial';">sku a</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">整个的</span><span style="font-family:'ArialMT', 'Arial';">shipping</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">、</span><span style="font-family:'ArialMT', 'Arial';">refund</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">，</span><span style="font-family:'ArialMT', 'Arial';">sku </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">a的结果为向商家索要30元，</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">考虑已经给商家打款的金额：0元，所以找商家要回0元</span></p>
         </div>
       </div>
 
@@ -365,7 +365,7 @@
       <div id="u276" class="ax_default label">
         <div id="u276_div" class=""></div>
         <div id="u276_text" class="text ">
-          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">在（n+w+m）月，综合</span><span style="font-family:'ArialMT', 'Arial';">sku a</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">整个的</span><span style="font-family:'ArialMT', 'Arial';">shipping</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">、</span><span style="font-family:'ArialMT', 'Arial';">refund</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">，</span><span style="font-family:'ArialMT', 'Arial';">sku </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">a的结果为向商家索要30元，</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">考虑已经给商家打款的金额：0元，所以找商家要回0元</span></p>
+          <p><span>（n+w）月，sku a的invoice=0元</span></p>
         </div>
       </div>
 
@@ -373,7 +373,7 @@
       <div id="u277" class="ax_default label">
         <div id="u277_div" class=""></div>
         <div id="u277_text" class="text ">
-          <p><span>（n+w）月，sku a的invoice=0元</span></p>
+          <p><span>第一步：查询当月产生了shipping\refund的sku的所有shipping、refund记录，依据所有记录判断，知道应付给商家的金额/应找商家拿回的金额</span></p>
         </div>
       </div>
 
@@ -381,7 +381,7 @@
       <div id="u278" class="ax_default label">
         <div id="u278_div" class=""></div>
         <div id="u278_text" class="text ">
-          <p><span>第一步：查询当月产生了shipping\refund的sku的所有shipping、refund记录，依据所有记录判断，知道应付给商家的金额/应找商家拿回的金额</span></p>
+          <p><span>第二步：若第一步的结论为应付商家x元，则比较已付商家的金额y元和（第一步结论中）应付商家的金额x元，</span></p>
         </div>
       </div>
 
@@ -389,7 +389,7 @@
       <div id="u279" class="ax_default label">
         <div id="u279_div" class=""></div>
         <div id="u279_text" class="text ">
-          <p><span>第二步：若第一步的结论为应付商家x元，则比较已付商家的金额y元和（第一步结论中）应付商家的金额x元，</span></p>
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">如果</span><span style="font-family:'ArialMT', 'Arial';">y</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">大于等于</span><span style="font-family:'ArialMT', 'Arial';">x</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">，则本次的invoice=0</span></p>
         </div>
       </div>
 
@@ -397,7 +397,7 @@
       <div id="u280" class="ax_default label">
         <div id="u280_div" class=""></div>
         <div id="u280_text" class="text ">
-          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">如果</span><span style="font-family:'ArialMT', 'Arial';">y</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">大于等于</span><span style="font-family:'ArialMT', 'Arial';">x</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">，则本次的invoice=0</span></p>
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">如果</span><span style="font-family:'ArialMT', 'Arial';">y</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">小于</span><span style="font-family:'ArialMT', 'Arial';">x</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">，则本次的invoice=x-y </span></p>
         </div>
       </div>
 
@@ -405,7 +405,7 @@
       <div id="u281" class="ax_default label">
         <div id="u281_div" class=""></div>
         <div id="u281_text" class="text ">
-          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">如果</span><span style="font-family:'ArialMT', 'Arial';">y</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">小于</span><span style="font-family:'ArialMT', 'Arial';">x</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">，则本次的invoice=x-y </span></p>
+          <p><span>第二步：若第一步的结论为向商家索要x元，则比较已付商家的金额y元和（第一步结论中）向商家索要的金额x元，</span></p>
         </div>
       </div>
 
@@ -413,7 +413,7 @@
       <div id="u282" class="ax_default label">
         <div id="u282_div" class=""></div>
         <div id="u282_text" class="text ">
-          <p><span>第二步：若第一步的结论为向商家索要x元，则比较已付商家的金额y元和（第一步结论中）向商家索要的金额x元，</span></p>
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">如果</span><span style="font-family:'ArialMT', 'Arial';">y</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">大于等于|</span><span style="font-family:'ArialMT', 'Arial';">x|</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">，则本次的invoice=-x</span></p>
         </div>
       </div>
 
@@ -421,16 +421,13 @@
       <div id="u283" class="ax_default label">
         <div id="u283_div" class=""></div>
         <div id="u283_text" class="text ">
-          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">如果</span><span style="font-family:'ArialMT', 'Arial';">y</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">大于等于|</span><span style="font-family:'ArialMT', 'Arial';">x|</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">，则本次的invoice=-x</span></p>
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">如果</span><span style="font-family:'ArialMT', 'Arial';">y</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">小于|</span><span style="font-family:'ArialMT', 'Arial';">x|</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">，则本次的invoice=-y </span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u284" class="ax_default label">
-        <div id="u284_div" class=""></div>
-        <div id="u284_text" class="text ">
-          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">如果</span><span style="font-family:'ArialMT', 'Arial';">y</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">小于|</span><span style="font-family:'ArialMT', 'Arial';">x|</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">，则本次的invoice=-y </span></p>
-        </div>
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u284" class="ax_default line">
+        <img id="u284_img" class="img " src="images/shipping_refund/u284.png"/>
       </div>
     </div>
   </body>
